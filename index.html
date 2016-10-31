@@ -70,6 +70,24 @@
         </div>
 
     </div>
+<!-- Output data/reading an array -->
+<div class="row">
+        <ul class="col-md-6 list-group" ng-controller="bookingController as timelist">
+            <li class="list-group-item" ng-repeat="info in timelist.infos">
+                <p>{{info.name}}</p>
+                <p>{{info.classid}}</p>
+                <p>{{info.email}}</p>
+                <p>{{info.reason}}</p>
+                <p>{{info.time}}</p>
+            </li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Booking</h1>
+        </div>
+    </div>    
+<!-- form -->
 <form class="row form-container" novalidate>
                  <div class="col-md-12">
                      <div class="col-md-6 title">
